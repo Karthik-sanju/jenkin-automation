@@ -1,5 +1,5 @@
 resource "aws_launch_configuration" "web-server" {
-  image_id      = "ami-019f9b3318b7155c5"
+  image_id      = "ami-01387af90a62e3c01"
   instance_type = "t2.micro"
   key_name      = "docker.pem"
 
