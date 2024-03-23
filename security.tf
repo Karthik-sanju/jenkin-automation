@@ -1,5 +1,5 @@
-resource "aws_security_group" "web_server1" {
-  name = "web_server-sg"
+resource "aws_security_group" "web_server" {
+  name_prefix = "web-server-sg"
   dynamic "ingress" {
     for_each = var.ports
     content {
