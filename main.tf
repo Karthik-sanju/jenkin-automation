@@ -28,6 +28,6 @@ resource "aws_autoscaling_group" "web_server_asg" {
     desired_capacity     = 2
     health_check_type    = "EC2"
     load_balancers       = [aws_elb.web_server_lb.name]
-    availability_zones    = [""us-east-2b"] 
+    availability_zones    = ["us-east-2b"] 
     
   }
